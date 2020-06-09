@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //匹配
+        /*
+        const string = "all your base belong here";
+        const regex = /base/;
+        const isExisting = regex.test(string);
+        //console.log(isExisting);
+        */
+
+        //提取
+        /*
+        const str2 = "my name is cody";
+        const regex2 = /my name is ([a-z]+)/;
+        const match = regex2.exec(str2);
+        if (match) {
+            const name = match[1];
+            console.log(name);
+
+        } else {
+            console.log("no match");
+        }
+        */
+
+        //提取（复杂）
+        const string = "filea.mp3  file_01.mp3 file_02.mp3 test.csv other.txt";
+        const regex = /(\w+ )\.mp3/g;
+        let match = regex.exec(string);
+        while (match) {
+            const filename = match[1];
+
+            console.log(filename);
+            match = regex.exec(string);
+        }
+    </script>
+</body>
+
+</html>

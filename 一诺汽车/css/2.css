@@ -1,0 +1,147 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  grid-template: "sec1 sec2" 90vh "sec3 sec3" 10vh/1fr 1fr;
+}
+
+section.sec1 {
+  grid-area: sec1;
+}
+
+section.sec2 {
+  grid-area: sec2;
+}
+
+section.sec2 .form_box {
+  height: 540px;
+  width: 400px;
+  position: relative;
+  margin: 18% auto;
+  border: 1px solid lightgray;
+  overflow: hidden;
+}
+
+.button_box {
+  width: 400px;
+  margin: 0 30px 0 0;
+  position: relative;
+}
+
+.toggle_btn {
+  width: 195px;
+  padding: 10px 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+
+a.if_tab {
+  color: gray;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+a.if_tab:hover {
+  text-decoration: none;
+}
+
+#btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  background-color: #0f6bb0;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin: 0;
+  padding: 0;
+}
+
+.input_group {
+  position: absolute;
+  top: 70px;
+  width: 280px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#form1 {
+  left: 50px;
+}
+
+#form2 {
+  left: 450px;
+}
+
+section.sec3 {
+  grid-area: sec3;
+}
+
+section.sec3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  /* justify-content: space-around; */
+  list-style: none;
+}
+
+.image1 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  margin-left: 100px;
+  /* margin-right: 20px; */
+  background: url(../img/img-公共/icon_foot.png) 0px 0px no-repeat;
+}
+
+.image2 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  background: url(../img/img-公共/icon_foot.png) 0px -56px no-repeat;
+}
+
+.image3 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  background: url(../img/img-公共/icon_foot.png) 0px -112px no-repeat;
+}
+
+.image4 {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 1px solid #0f6bb0;
+  background: url(../img/img-公共/icon_foot.png) 0px -168px no-repeat;
+}
+
+section.sec3 li {
+  line-height: 10vh;
+  margin-right: 200px;
+}
+
+iframe {
+  height: 800px;
+  width: 800px;
+}
+
+#footer {
+  bottom: auto;
+}
+/*# sourceMappingURL=2.css.map */

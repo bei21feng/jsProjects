@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        ol {
+            list-style: decimal;
+        }
+
+        div.info {
+            display: none;
+        }
+
+        li {
+            border: 1px solid black;
+            max-width: 350px;
+        }
+
+        li:hover div.info {
+            display: block;
+        }
+
+        li.hot {
+            color: red;
+        }
+
+        li.hot span.inf {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <span>近期热销榜</span>
+        <li class="hot"><span class="inf">萤火虫小巷</span>
+            <div id="li1" class="info">
+                <img src="img/萤火虫小巷.jpg" alt="">
+                <span class="inf">作者</span>
+            </div>
+        </li>
+        <li class="hot"><span class="inf">如果蜗牛有爱情</span>
+            <div id="li1" class="info">
+                <img src="img/蜗牛爱情.jpg" alt="">
+                <span class="inf">作者</span>
+            </div>
+        </li>
+        <li>语言学刚要
+            <div id="li1" class="info">
+                <img src="img/语言学纲要.jpg" alt="">
+                作者
+            </div>
+        </li>
+        <li>管理信息系统
+            <div id="li1" class="info">
+                <img src="img/管理信息.jpg" alt="">
+                作者
+            </div>
+        </li>
+    </ol>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- action表单提交的url -->
+    <form action="1基本元素.html">
+        user<input type="text" name="user" required><br>
+        pwd<input type="password" name="pwd"><br>
+
+        爱好<br>
+        <!-- 复选框checkbox 具有相同name -->
+        <input type="checkbox" name="hobby" value="basketball">篮球
+        <input type="checkbox" name="hobby" value="football">足球
+        <input type="checkbox" name="hobby" value="pingpong">乒乓<br>
+
+        <!-- 单选框radio 相同name -->
+        性别：
+        <input type="radio" name="gender" value="f" id="">女
+        <input type="radio" name="gender" value="m" id="">男<br>
+
+        国籍：
+        <input type="radio" name="country" value="c" id="">China
+        <input type="radio" name="country" value="a" id="">America<br>
+
+        卧铺：
+        <input type="hidden" name="level"><br>
+
+        评论：
+        <br>
+        <input type="text" name="comment" value="我的评论" id=""><br>
+        <input type="text" name="comment" placeholder="评论2" id=""><br>
+        <textarea name="" id="" cols="30" rows="10">文本框评论</textarea>
+        <br>
+
+        籍贯:
+        <select name="jiguan" id="">
+            <option value="山东">山东</option>
+            <option value="山西">山西</option>
+        </select><br>
+
+        <input type="submit">
+        <input type="reset" value="reset">
+
+    </form>
+</body>
+
+</html>

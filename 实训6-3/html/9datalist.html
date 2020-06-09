@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 1, select 只能选择不能输入 -->
+    <!-- 2, input 只能输入不能选择 -->
+    <select name="" id="">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+    </select>
+
+    <!-- 3, 使用input+datalist实现选择+输入 -->
+    <!-- datalist兼容性不好 -->
+    <input type="text" list="d1" name="" id="">
+    <datalist id="d1">
+        <option value="1">选择1</option>
+        <option value="2">选择2</option>
+        <option value="3">选择3</option>
+    </datalist>
+
+    <!-- detail -->
+    <details>
+        <summary>html课程</summary>
+        <p>第一章介绍</p>
+        <dl>
+            <dt>第二章</dt>
+            <dd>内容</dd>
+        </dl>
+    </details>
+
+    <!-- input 常用 type -->
+    <!-- 正则表达式 -->
+    <input type="email" pattern="" name="" id="">
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		/* 群组选择器 */
+		h1,div,ul,li{
+			display: inline-block;
+		}			
+		</style>
+	</head>
+	<body>
+	<!-- 1、*，通配符选择器、通用选择器、全部选择器，即选择全部元素 -->
+	<!-- 2、群组选择器，把样式相同的多个元素放在一起，使用逗号分隔 -->
+	<!-- 3、层次选择器 -->	
+	<style>
+	/* 3.1 后代选择器，即空格，儿子、孙子、重孙... */
+	#p1 span{
+		/* background-color: blue; */
+	}
+	/* 3.2 子选择器，即大于号，只有儿子， */
+	#p1>span{
+		/* background-color: blue; */
+	}
+	/* 3.3 相邻兄弟选择器，即加号*/
+	#sp1+span{
+		/* background-color: blue; */
+	}
+	/* 3.4 通用兄弟选择器，即~ */
+	#sp1~span{
+		/* background-color: blue; */
+	}
+	
+	#p1>span:first-child{
+		/* background-color: red; */
+	}	
+	
+	/* 属性选择器 */
+	span[id]{
+		background-color: red;
+	}
+	</style>
+	<p id="p1">
+	  <span>span0</span>
+	  <span id="sp1">span1
+		<span>span2
+		  <span>span3</span>
+		</span>
+	  </span>
+	  <span>span4</span>
+	  <span>span5</span>
+	</p>
+	
+	</body>
+</html>

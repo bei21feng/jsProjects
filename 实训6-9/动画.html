@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        $(function () {
+            $(btn1).click(function () {
+                $(d1).hide("slow");
+            })
+            $(btn2).click(function () {
+                $(d1).show();
+            })
+            $(btn3).click(function () {
+                $(d1).toggle(1000);
+            })
+        })
+    </script>
+    <style>
+        #d1 {
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">隐藏</button>
+    <button id="btn2">显示</button>
+    <button id="btn3">toggle</button>
+    <div id="d1""></div>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+@import "./variables";
+@import "./header";
+
+.contact {
+    background: $primaryBtn;
+    @include flexCenter(row);
+    width: 100% - 30%;
+}
